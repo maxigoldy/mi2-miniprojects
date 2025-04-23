@@ -1,2 +1,2 @@
-# mi2-miniprojects
+# MI2 - Miniprojects
 University Project of several small tasks
