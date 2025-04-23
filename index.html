@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übungen Verzeichnis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f0f5;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .button-grid button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background: #eee;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .button-grid button.selected {
+            background: #007aff;
+            color: white;
+        }
+
+        .button-grid button.correct {
+            background: #4caf50 !important;
+        }
+
+        button[disabled] {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #007aff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover:not([disabled]) {
+            background: #005fcc;
+        }
+
+        .ziehung, .auswertung {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Übungen Übersicht</h1>
+        <div class="button-grid">
+            <button onclick="window.location.href='01_Lotto/index.html'">Übung 1 - Lotto</button>
+            <button onclick="window.location.href='02_Lotto/index.html'">Übung 2 - Lotto</button>
+            <button onclick="window.location.href='03_Übung/index.html'">Übung 3 - Beispiel</button>
+            <button onclick="window.location.href='04_Übung/index.html'">Übung 4 - Beispiel</button>
+            <button onclick="window.location.href='05_Übung/index.html'">Übung 5 - Beispiel</button>
+            <button onclick="window.location.href='06_Übung/index.html'">Übung 6 - Beispiel</button>
+        </div>
+        <button onclick="window.location.href='index.html'">Zurück</button>
+    </div>
+</body>
+</html>
