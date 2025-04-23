@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lotto-Spiel – Maximilian Goldmann</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lotto-Spiel</h1>
+    <p>Wähle 6 verschiedene Zahlen zwischen 1 und 49 durch Klick auf die Felder.</p>
+
+    <div id="lotto-buttons" class="button-grid"></div>
+
+    <button id="abgebenBtn" onclick="tippAbgeben()" disabled>Tipp abgeben</button>
+
+    <div id="ziehung" class="ziehung"></div>
+    <div id="auswertung" class="auswertung"></div>
+
+    <button id="neuBtn" onclick="neustart()" style="display:none;">Neues Spiel</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

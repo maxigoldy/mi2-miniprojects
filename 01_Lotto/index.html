@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lotto Zahlen Generator - Maximilian Goldmann</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lotto Zahlen Generator</h1>
+            <p>Lassen Sie sich Lotto Zahlen (ohne Gewähr) generieren.</p>
+            <label for="spiele">Wie viele Spiele sollen generiert werden?</label>
+            <input type="number" id="spiele" min="1" max="20" value="3"/>
+            <button onclick="generateLotto()">Generieren!</button>
+            <div id="lottoTabelle"></div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
