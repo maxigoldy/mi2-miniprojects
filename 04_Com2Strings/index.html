@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Vergleich</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Code-Vergleich</h2>
+        <div class="container">
+            <textarea id="text1" placeholder="Originaltext eingeben..."></textarea>
+            <textarea id="text2" placeholder="Vergleichstext eingeben..."></textarea>
+        </div>
+        <button onclick="compareTexts()">Vergleichen</button>
+        <div class="results">
+            <div id="result1" class="result-box"></div>
+            <div id="result2" class="result-box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.terminal {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #33ff33;
+  padding: 20px;
+  background-color: #000000;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.output {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  background: none;
+  border: none;
+  color: #33ff33;
+  font: inherit;
+  outline: none;
+  flex-grow: 1;
+}
